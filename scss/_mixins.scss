@@ -1,0 +1,6 @@
+@mixin dispositivo ($ancho) {
+
+    @media screen and (min-width: #{$ancho}) {
+        @content;
+    }
+}

@@ -1,0 +1,16 @@
+{
+
+    "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/dist/css",
+      "savePathReplacementPairs": null
+    }
+  ],
+  "window.zoomLevel": 0,
+  "liveSassCompile.settings.forceBaseDirectory": "",
+  "liveSassCompile.settings.generateMap": false,
+  "extensions.allowed": "*"
+
+}

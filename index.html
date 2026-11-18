@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica 3 · Menús con Flexbox</title>
+
+  <!-- Fuente y iconos (Font Awesome, tamaño 32px en el menú con iconos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+  <div class="contenedor">
+
+    <!-- 1. MENÚ SENCILLO -->
+    <h2>Menú Sencillo</h2>
+    <nav class="menu menu-sencillo">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Tienda Virtual</a></li>
+        <li><a href="#">Asistencia</a></li>
+      </ul>
+    </nav>
+
+    <!-- 2. CON ICONOS -->
+    <h2>Con Iconos</h2>
+    <nav class="menu menu-iconos">
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-house" aria-hidden="true"></i>
+            <span class="texto"><span class="titulo">Inicio</span><span class="subtitulo">Página Principal</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span class="texto"><span class="titulo">Contacto</span><span class="subtitulo">Escríbenos aquí</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-dollar-sign" aria-hidden="true"></i>
+            <span class="texto"><span class="titulo">Tienda Virtual</span><span class="subtitulo">Adquire nuestros artículos</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
+            <span class="texto"><span class="titulo">Asistencia</span><span class="subtitulo">¿Necesitas Ayuda?</span></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 3. DROPDOWN MENU -->
+    <h2>Dropdown Menu</h2>
+    <nav class="menu">
+      <ul class="dropdown">
+        <li><a href="#">Inicio</a></li>
+        <li>
+          <a href="#">Nosotros</a>
+          <ul class="submenu">
+            <li><a href="#">Misión</a></li>
+            <li><a href="#">Visión</a></li>
+            <li><a href="#">Valores</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Tienda Virtual</a>
+          <ul class="submenu">
+            <li><a href="#">Producto 1</a></li>
+            <li><a href="#">Producto 2</a></li>
+            <li><a href="#">Producto 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Asistencia</a></li>
+      </ul>
+    </nav>
+
+    <!-- 4. REDES SOCIALES -->
+    <h2>Redes Sociales</h2>
+    <nav class="menu">
+      <ul class="social">
+        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></li>
+      </ul>
+    </nav>
+
+    <!-- 5. DROPDOWN MENU CON REDES SOCIALES -->
+    <h2>Dropdown Menu con Redes Sociales</h2>
+    <nav class="menu barra-doble">
+      <ul class="dropdown">
+        <li><a href="#">Inicio</a></li>
+        <li>
+          <a href="#">Nosotros</a>
+          <ul class="submenu">
+            <li><a href="#">Misión</a></li>
+            <li><a href="#">Visión</a></li>
+            <li><a href="#">Valores</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Tienda Virtual</a>
+          <ul class="submenu">
+            <li><a href="#">Producto 1</a></li>
+            <li><a href="#">Producto 2</a></li>
+            <li><a href="#">Producto 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Asistencia</a></li>
+      </ul>
+      <ul class="social">
+        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></li>
+      </ul>
+    </nav>
+
+  </div>
+</body>
+</html>
