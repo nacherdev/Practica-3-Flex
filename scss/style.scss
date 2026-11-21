@@ -5,4 +5,146 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+body {
+    background: $fondoBody;
+}
+
+h2 {
+    color: black;
+    padding: 1rem 0;
+}
+
+.contenedor {
+	max-width: $ancho-maximo;
+	margin: 0 auto;
+    @include escritorio () {
+	    padding: $margen-container;
+    }
+    background-color: white;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: $fondo-menu;
+    text-align: center;
+    font-size: $font-m;
+    
+    ul {        
+        li {
+            padding: $margen;
+            flex-grow: 1;
+            &:hover {
+                background-color: $azul-marino;
+            }
+            
+        }
+        @include escritorio () {
+            display: flex;
+            flex-direction: row;
+            
+        }
+    }
+    
+}
+
+.menu-iconos {
+    ul {
+        li {
+            a {
+                i {
+                    font-size: $font-l;
+                }
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-align: left;
+                gap: $margen;
+
+                
+                .texto {
+                    display: flex;
+                    flex-direction: column;
+                    gap: $margen-texto;
+                    .subtitulo {
+                        font-size: $font-subtitulo;
+                    }
+                }
+                
+            }
+            flex-basis: calc(100%/2 - 1rem/2);
+        }
+        @include tablet () {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                
+        }
+        @include escritorio () {
+            flex-wrap: nowrap;
+        }
+    }
+
+    
+}
+
+.dropdown {
+    text-align: left;
+    >li {
+        display: flex;
+        flex-direction: column;
+        .submenu {
+            li {
+                margin-left: $margen;
+                &:hover {
+                    background-color: $hover-submenu-li;
+                }
+            }
+        }
+        @include escritorio () {
+        position: relative;
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            li {
+                margin: 0;
+            }
+            
+        }
+        &:hover {
+                .submenu {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $hover-submenu-li;
+                }
+            }
+        }
+    }   
+}
+
+
+.social {
+    display: flex;
+    @include escritorio () {
+        margin-left: auto;
+    }
+}
+
+.barra-doble {
+    @include escritorio () {
+        flex-direction: row;
+        .dropdown {
+            flex-basis: 50%;
+            align-items: center;
+        }
+    }
 }

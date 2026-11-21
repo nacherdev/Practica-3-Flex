@@ -1,6 +1,13 @@
-@mixin dispositivo ($ancho) {
+@mixin tablet () {
 
-    @media screen and (min-width: #{$ancho}) {
+    @media screen and (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin escritorio () {
+
+    @media screen and (min-width: #{$escritorio}) {
         @content;
     }
 }
